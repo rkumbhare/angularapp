@@ -1,0 +1,21 @@
+<div class="main">
+  <div class="main-row row">
+    <div class="col-xs-2">
+      <div class="header">
+          <h2 class="title">Angular App</h2>
+      </div>
+      <div class="menu">
+        <ul>
+            <li><a routerLink="databinding" routerLinkActive="active">Data Binding</a></li>
+            <li><a routerLink="datapipes" routerLinkActive="active">Data Pipes</a></li>
+            <li><a routerLink="formvalidation" routerLinkActive="active">Form Validation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-xs-10">
+      <div class="body">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

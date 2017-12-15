@@ -1,0 +1,32 @@
+<div class="container">
+
+    <h3> One way & Two way Data Binding Example</h3>
+
+    <br/>
+
+    <div class="row">
+      <div class="col-md-3">
+        <input type="text" class="form-control medium" [(ngModel)]="fname"
+            placeholder="Enter your first name">
+      </div>
+      <div class="col-md-3">
+          <input type="text" class="form-control medium" [(ngModel)]="mname" 
+            placeholder="Enter your middle name">
+      </div>
+      <div class="col-md-3">
+          <input type="text" class="form-control medium" [(ngModel)]="lname"
+            placeholder="Enter your last name">
+      </div>
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="row">
+      <div class="col-md-12" *ngIf="fname && lname">
+        <strong>Your Name : {{fname}} {{mname}} {{lname}} </strong>
+      </div>
+    </div>
+
+</div>
+
